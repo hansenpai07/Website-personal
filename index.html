@@ -3,126 +3,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pesan untuk Dede 💖</title>
+    <title>Surat untuk Dede 💌</title>
     <style>
         /* Gaya Umum */
         body {
-            background-color: #ffebf0;
-            font-family: 'Arial', sans-serif;
+            background-color: #ffe4e1;
+            font-family: 'Georgia', serif;
             color: #5a3d5c;
             text-align: center;
             margin: 0;
-            padding: 0;
-            overflow-y: auto; /* Memastikan bisa di-scroll */
-            height: 100vh;
+            padding: 20px;
             display: flex;
             justify-content: center;
             align-items: center;
-            flex-direction: column;
+            min-height: 100vh;
+            overflow-y: auto; /* Memastikan bisa di-scroll */
         }
 
-        /* Kotak Pesan */
-        .container {
+        /* Bentuk Surat */
+        .surat {
             background-color: white;
             width: 90%;
             max-width: 400px;
-            padding: 20px;
-            border-radius: 15px;
-            box-shadow: 0px 4px 8px rgba(255, 0, 102, 0.2);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
             position: relative;
-            z-index: 2;
-            margin-top: 20px;
-            margin-bottom: 20px;
+            text-align: left;
+            line-height: 1.8;
         }
 
-        /* Animasi Love */
-        .love {
-            position: fixed;
-            color: pink;
-            font-size: 20px;
-            animation: fall 6s infinite linear;
-            opacity: 0.7;
+        /* Efek Pinggir Kertas */
+        .surat::before {
+            content: "";
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            right: -10px;
+            bottom: -10px;
+            background: rgba(255, 192, 203, 0.3);
+            border-radius: 15px;
+            z-index: -1;
         }
 
-        @keyframes fall {
-            0% { transform: translateY(-100vh) translateX(0); opacity: 1; }
-            100% { transform: translateY(100vh) translateX(20px); opacity: 0; }
-        }
-
-        /* Efek Teks */
-        h1 {
-            color: #ff4d6d;
-            font-size: 22px;
+        /* Header Surat */
+        .header {
+            text-align: center;
+            font-size: 18px;
             font-weight: bold;
-            font-family: 'Georgia', serif;
+            color: #ff4d6d;
+            margin-bottom: 10px;
         }
 
+        /* Isi Surat */
         p {
             font-size: 14px;
-            line-height: 1.6;
+            text-align: justify;
+            margin-bottom: 12px;
         }
 
         /* Tombol Chat */
-        a {
-            display: inline-block;
-            margin-top: 10px;
-            padding: 8px 12px;
+        .chat-btn {
+            display: block;
+            text-align: center;
             background-color: #ff4d6d;
             color: white;
             text-decoration: none;
+            padding: 8px 14px;
             border-radius: 8px;
             font-size: 14px;
             font-weight: bold;
+            margin-top: 15px;
             transition: 0.3s ease-in-out;
+            text-align: center;
         }
 
-        a:hover {
+        .chat-btn:hover {
             background-color: #ff1e4a;
             transform: scale(1.05);
         }
 
-        /* Pesan Penutup */
+        /* Tanda Tangan */
         .footer {
-            margin-top: 15px;
+            text-align: right;
             font-size: 12px;
+            font-style: italic;
             color: #5a3d5c;
+            margin-top: 15px;
         }
 
-        /* Efek Love */
-        .love-container {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            z-index: 1;
-            pointer-events: none;
-        }
-
-        /* Love Random */
-        .love:nth-child(1) { left: 10%; animation-duration: 7s; }
-        .love:nth-child(2) { left: 30%; animation-duration: 9s; }
-        .love:nth-child(3) { left: 50%; animation-duration: 8s; }
-        .love:nth-child(4) { left: 70%; animation-duration: 10s; }
-        .love:nth-child(5) { left: 90%; animation-duration: 6s; }
-
-        /* Responsif untuk layar kecil (HP) */
+        /* Responsif untuk HP */
         @media (max-width: 480px) {
             body {
                 padding: 10px;
             }
-            .container {
+            .surat {
                 width: 95%;
                 padding: 15px;
-            }
-            h1 {
-                font-size: 20px;
             }
             p {
                 font-size: 13px;
             }
-            a {
+            .chat-btn {
                 font-size: 12px;
                 padding: 6px 10px;
             }
@@ -131,34 +113,28 @@
 </head>
 <body>
 
-    <!-- Efek Love Jatuh -->
-    <div class="love-container">
-        <div class="love">❤️</div>
-        <div class="love">💖</div>
-        <div class="love">💞</div>
-        <div class="love">💗</div>
-        <div class="love">💕</div>
-    </div>
-
-    <!-- Kotak Pesan -->
-    <div class="container">
-        <h1>Hai dedee 💕</h1>
+    <!-- Bentuk Surat -->
+    <div class="surat">
+        <div class="header">Hai dedee 💕</div>
         <p>Gimana kabarnya? Sehat?</p>
         <p>Ini aku, ayo coba tebak siapa... Harusnya kamu tahu aku siapa hahaha 😆</p>
         <p>Aku bingung gimana caranya nanya kabar kamu...</p>
-        <p>Akhirnya aku kepikiran buat situs sederhana ini supaya nanti bisa kamu lihat. Aku cuma mau bilang kalau aku sayang sama kamu... ❤️</p>
+        <p>Akhirnya aku kepikiran buat surat ini supaya nanti bisa kamu lihat. Aku cuma mau bilang kalau aku sayang sama kamu... ❤️</p>
         <p>Aku juga bingung aku harus apa... Tolong kasih tahu aku, dedee, aku harus apa? 😞</p>
         <p>Aku harus pergi dari hidup kamu? Kalau iya, bakal aku lakuin kok... Tapi aku juga bakalan nungguin kamu sampai kapan pun... 🥺</p>
         <p>Jangan sungkan minta tolong ke aku ya... Eh, tapi kayaknya kamu udah benci banget sama aku ya? Gak apa-apa, aku ngerti kok... 😢</p>
 
-        <a href="https://www.tiktok.com/@nunblur?_t=ZS-8tT57kkZJUf&_r=1" target="_blank">
+        <a href="https://www.tiktok.com/@nunblur?_t=ZS-8tT57kkZJUf&_r=1" class="chat-btn" target="_blank">
             Klik di sini kalau mau chat aku, aku selalu nunggu kabar kamu... 💬
         </a>
 
-        <p class="footer">Maaf kalau aku jahat... Aku cuma pengen kamu tahu kalau aku akan selalu di sini... Nungguin kamu sampai kapan pun. 💖</p>
-
-        <h2>Papay dedee! 👋</h2>
+        <div class="footer">
+            Maaf kalau aku jahat... Aku cuma pengen kamu tahu kalau aku akan selalu di sini... Nungguin kamu sampai kapan pun. 💖
+            <br><br>
+            <strong>Papay dedee! 👋</strong>
+        </div>
     </div>
 
 </body>
 </html>
+
