@@ -3,34 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pesan untuk dede</title>
-</head>
-<body>
-    <p>Hai dedee,</p>
-    <p>Gimana kabarnya sehat,<br>ini aku hayo coba tebak siapa, harusnya tau si aku siapa hahahhah<br>aku bingung harus nanya kabar kamu gimana caranya,
-      yaudah aku kepikiran buat situs sederhana supaya nanti bisa kamu liat,<br>aku cuman mau bilang kalo aku sayang sama kamu terus aku juga 
-      bingung aku harus apa kasih tau aku dedee aku harus apaa,<br>aku harus pergi dari hidup kamu gitu? kalo iya bakal aku lakuin kok,<br> 
-      aku bakalan nungguin kamu kok sampai kapan pun,<br>jangan sunngkang untuk minta tolong ke aku ya, ehhh tapi kayaknya kamu udah benci banget sama aku ya
-      gpp wajar, :</p>
-    <p><a href="https://www.tiktok.com/@nunblur?_t=ZS-8tT57kkZJUf&_r=1" target="_blank">Klik ini ya untuk sekedar chat aku untuk bilang kabar kamu gimana aku nungguin (:</a></p>
-    <p>SOORY KARNA AKU JAHAT, KEEP STRONG AKU TAU KAMU HARUS KUAT NGELALUI SEMUANYA! :)</p>
-    <p>AKU TAU INI LANCANG KARNA KIRIM KAMU INI TOLONG KASIH AKU JAWABAN PLISS AKU HAMPIR GILA,<br>AKU BAKAL NUNGGUIN KAMU SAMPAI KAPAN PUN</p>
-</body>
-</html>
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Background Warna</title>
+    <title>Pesan untuk Dede 💖</title>
     <style>
+        /* Gaya Umum */
         body {
-            background-color: lightblue;
+            background-color: #ffebf0;
+            font-family: 'Arial', sans-serif;
+            color: #5a3d5c;
+            text-align: center;
+            padding: 20px;
+            overflow: hidden;
         }
+
+        /* Kotak Pesan */
+        .container {
+            background-color: white;
+            max-width: 600px;
+            margin: auto;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 8px rgba(255, 0, 102, 0.2);
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Animasi Love */
+        .love {
+            position: absolute;
+            color: pink;
+            font-size: 30px;
+            animation: fall 5s infinite linear;
+            opacity: 0.7;
+        }
+
+        @keyframes fall {
+            0% { transform: translateY(-100vh) translateX(0); opacity: 1; }
+            100% { transform: translateY(100vh) translateX(20px); opacity: 0; }
+        }
+
+        /* Efek Teks */
+        h1 {
+            color: #ff4d6d;
+            font-size: 26px;
+            font-weight: bold;
+            font-family: 'Georgia', serif;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Tombol Chat */
+        a {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 15px;
+            background-color: #ff4d6d;
+            color: white;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: 0.3s ease-in-out;
+        }
+
+        a:hover {
+            background-color: #ff1e4a;
+            transform: scale(1.1);
+        }
+
+        /* Pesan Penutup */
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #5a3d5c;
+        }
+
+        /* Efek Love */
+        .love-container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        /* Love Random */
+        .love:nth-child(1) { left: 10%; animation-duration: 6s; }
+        .love:nth-child(2) { left: 30%; animation-duration: 8s; }
+        .love:nth-child(3) { left: 50%; animation-duration: 7s; }
+        .love:nth-child(4) { left: 70%; animation-duration: 9s; }
+        .love:nth-child(5) { left: 90%; animation-duration: 5s; }
+
     </style>
 </head>
 <body>
-    <h1>PAPAY</h1>
+
+    <!-- Efek Love Jatuh -->
+    <div class="love-container">
+        <div class="love">❤️</div>
+        <div class="love">💖</div>
+        <div class="love">💞</div>
+        <div class="love">💗</div>
+        <div class="love">💕</div>
+    </div>
+
+    <!-- Kotak Pesan -->
+    <div class="container">
+        <h1>Hai dedee 💕</h1>
+        <p>Gimana kabarnya? Sehat?</p>
+        <p>Ini aku, ayo coba tebak siapa... Harusnya kamu tahu aku siapa hahaha 😆</p>
+        <p>Aku bingung gimana caranya nanya kabar kamu...</p>
+        <p>Akhirnya aku kepikiran buat situs sederhana ini supaya kamu bisa lihat. Aku cuma mau bilang kalau aku sayang sama kamu... ❤️</p>
+        <p>Aku juga bingung, aku harus apa... Tolong kasih tahu aku, dedee, aku harus apa? 😞</p>
+        <p>Aku harus pergi dari hidup kamu? Kalau iya, aku bakal lakuin kok... Tapi aku juga bakalan nungguin kamu sampai kapan pun... 🥺</p>
+        <p>Jangan sungkan minta tolong ke aku ya... Tapi kayaknya kamu udah benci banget sama aku ya? Gak apa-apa, aku ngerti kok... 😢</p>
+
+        <a href="https://www.tiktok.com/@nunblur?_t=ZS-8tT57kkZJUf&_r=1" target="_blank">
+            Klik di sini kalau mau chat aku, aku selalu nunggu kabar kamu... 💬
+        </a>
+
+        <p class="footer">Maaf kalau aku jahat... Aku cuma pengen kamu tahu kalau aku akan selalu di sini... Nungguin kamu sampai kapan pun. 💖</p>
+
+        <h2>Papay dedee! 👋</h2>
+    </div>
+
 </body>
 </html>
-
