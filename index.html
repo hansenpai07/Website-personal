@@ -12,16 +12,17 @@
             color: #5a3d5c;
             text-align: center;
             padding: 20px;
+            margin: 0;
             overflow: hidden;
         }
 
         /* Kotak Pesan */
         .container {
             background-color: white;
-            max-width: 600px;
+            max-width: 90%;
             margin: auto;
-            padding: 20px;
-            border-radius: 15px;
+            padding: 15px;
+            border-radius: 12px;
             box-shadow: 0px 4px 8px rgba(255, 0, 102, 0.2);
             position: relative;
             z-index: 2;
@@ -31,8 +32,8 @@
         .love {
             position: absolute;
             color: pink;
-            font-size: 30px;
-            animation: fall 5s infinite linear;
+            font-size: 20px;
+            animation: fall 6s infinite linear;
             opacity: 0.7;
         }
 
@@ -44,38 +45,39 @@
         /* Efek Teks */
         h1 {
             color: #ff4d6d;
-            font-size: 26px;
+            font-size: 22px;
             font-weight: bold;
             font-family: 'Georgia', serif;
         }
 
         p {
-            font-size: 16px;
-            line-height: 1.8;
+            font-size: 14px;
+            line-height: 1.6;
         }
 
         /* Tombol Chat */
         a {
             display: inline-block;
-            margin-top: 15px;
-            padding: 10px 15px;
+            margin-top: 10px;
+            padding: 8px 12px;
             background-color: #ff4d6d;
             color: white;
             text-decoration: none;
-            border-radius: 10px;
+            border-radius: 8px;
+            font-size: 14px;
             font-weight: bold;
             transition: 0.3s ease-in-out;
         }
 
         a:hover {
             background-color: #ff1e4a;
-            transform: scale(1.1);
+            transform: scale(1.05);
         }
 
         /* Pesan Penutup */
         .footer {
-            margin-top: 20px;
-            font-size: 14px;
+            margin-top: 15px;
+            font-size: 12px;
             color: #5a3d5c;
         }
 
@@ -92,12 +94,32 @@
         }
 
         /* Love Random */
-        .love:nth-child(1) { left: 10%; animation-duration: 6s; }
-        .love:nth-child(2) { left: 30%; animation-duration: 8s; }
-        .love:nth-child(3) { left: 50%; animation-duration: 7s; }
-        .love:nth-child(4) { left: 70%; animation-duration: 9s; }
-        .love:nth-child(5) { left: 90%; animation-duration: 5s; }
+        .love:nth-child(1) { left: 10%; animation-duration: 7s; }
+        .love:nth-child(2) { left: 30%; animation-duration: 9s; }
+        .love:nth-child(3) { left: 50%; animation-duration: 8s; }
+        .love:nth-child(4) { left: 70%; animation-duration: 10s; }
+        .love:nth-child(5) { left: 90%; animation-duration: 6s; }
 
+        /* Responsif untuk layar kecil (HP) */
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+            .container {
+                max-width: 95%;
+                padding: 12px;
+            }
+            h1 {
+                font-size: 20px;
+            }
+            p {
+                font-size: 13px;
+            }
+            a {
+                font-size: 12px;
+                padding: 6px 10px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -117,10 +139,10 @@
         <p>Gimana kabarnya? Sehat?</p>
         <p>Ini aku, ayo coba tebak siapa... Harusnya kamu tahu aku siapa hahaha 😆</p>
         <p>Aku bingung gimana caranya nanya kabar kamu...</p>
-        <p>Akhirnya aku kepikiran buat situs sederhana ini supaya kamu bisa lihat. Aku cuma mau bilang kalau aku sayang sama kamu... ❤️</p>
-        <p>Aku juga bingung, aku harus apa... Tolong kasih tahu aku, dedee, aku harus apa? 😞</p>
-        <p>Aku harus pergi dari hidup kamu? Kalau iya, aku bakal lakuin kok... Tapi aku juga bakalan nungguin kamu sampai kapan pun... 🥺</p>
-        <p>Jangan sungkan minta tolong ke aku ya... Tapi kayaknya kamu udah benci banget sama aku ya? Gak apa-apa, aku ngerti kok... 😢</p>
+        <p>Akhirnya aku kepikiran buat situs sederhana ini supaya nanti bisa kamu lihat. Aku cuma mau bilang kalau aku sayang sama kamu... ❤️</p>
+        <p>Aku juga bingung aku harus apa... Tolong kasih tahu aku, dedee, aku harus apa? 😞</p>
+        <p>Aku harus pergi dari hidup kamu? Kalau iya, bakal aku lakuin kok... Tapi aku juga bakalan nungguin kamu sampai kapan pun... 🥺</p>
+        <p>Jangan sungkan minta tolong ke aku ya... Eh, tapi kayaknya kamu udah benci banget sama aku ya? Gak apa-apa, aku ngerti kok... 😢</p>
 
         <a href="https://www.tiktok.com/@nunblur?_t=ZS-8tT57kkZJUf&_r=1" target="_blank">
             Klik di sini kalau mau chat aku, aku selalu nunggu kabar kamu... 💬
